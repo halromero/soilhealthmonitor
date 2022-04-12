@@ -24,10 +24,10 @@ const dataTitle = TextStyle(
   fontFamily: 'Staatliches'
 );
 
-const dataCaption = TextStyle(
+const splashCaption = TextStyle(
   fontSize: 30,
-  color: Colors.black,
-  fontFamily: 'Caveat Brush',
+  color: Colors.white,
+  fontFamily: 'Caveat',
 );
 
 const dataValue = TextStyle(

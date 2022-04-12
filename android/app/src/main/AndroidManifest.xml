@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.soil_monitoring_system">
    <application
-        android:label="soil_monitoring_system"
+        android:label="Soil Health Monitor"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/soil_health_monitor">
         <activity
             android:name=".MainActivity"
             android:exported="true"

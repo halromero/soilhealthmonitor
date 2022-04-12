@@ -27,13 +27,8 @@ class _SplashScreen extends State<SplashScreen> {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Column(
-            children: const <Widget> [
-              Text(
-                'Soil Health Monitor',
-                style: splashTitle,
-              ),
-            ],
+          child: Image.asset(
+            "lib/images/soilhealthmonitor.png"
           ),
         ),
       ),
