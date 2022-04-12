@@ -3,35 +3,54 @@ import 'package:flutter/material.dart';
 const splashTitle = TextStyle(
   fontSize: 35,
   color: Colors.white,
+  fontFamily: 'Staatliches'
 );
 
 const dashboardTitle1 = TextStyle(
   fontSize: 30,
   color: Colors.white,
+  fontFamily: 'Caveat Brush',
 );
 
 const dashboardTitle2 = TextStyle(
   fontSize: 35,
   color: Colors.white,
+  fontFamily: 'Staatliches'
 );
 
 const dataTitle = TextStyle(
   fontSize: 40,
-  color: Colors.black
+  color: Colors.black,
+  fontFamily: 'Staatliches'
 );
 
 const dataCaption = TextStyle(
-    fontSize: 30,
-    color: Colors.black
+  fontSize: 30,
+  color: Colors.black,
+  fontFamily: 'Caveat Brush',
 );
 
 const dataValue = TextStyle(
-    fontSize: 50,
-    color: Colors.grey
+  fontSize: 50,
+  color: Colors.grey,
+  fontFamily: 'Staatliches'
 );
 
 
+const startStyle = TextStyle(
+  fontSize: 30,
+  color: Colors.green,
+  fontFamily: 'Staatliches'
+);
+
 const btnStyle = TextStyle(
     fontSize: 30,
-    color: Colors.white
+    color: Colors.white,
+    fontFamily: 'Staatliches'
+);
+
+const stopStyle = TextStyle(
+    fontSize: 30,
+    color: Colors.red,
+    fontFamily: 'Staatliches'
 );

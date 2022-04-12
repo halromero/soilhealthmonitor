@@ -1,8 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:soil_monitoring_system/dashboard.dart';
-import 'splashScreen.dart';
 import 'styles.dart';
 
 void main() {
@@ -18,13 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Soil Health Monitoring System',
       home: AnimatedSplashScreen(
-        splash: Text(
+        splash: const Text(
           'Soil Health Monitor',
-          style: GoogleFonts.staatliches(textStyle: splashTitle),
+          style: splashTitle,
         ),
-        nextScreen: DashboardScreen(),
+        nextScreen: const DashboardScreen(),
         splashTransition: SplashTransition.fadeTransition,
-        backgroundColor: Color(0xFF222831),
+        backgroundColor: const Color(0xFF222831),
       ),
     );
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'styles.dart';
 
 
@@ -20,16 +19,16 @@ class _DashboardScreen extends State<DashboardScreen> {
         toolbarHeight: 150,
         title: Center(
           child: Column(
-          children: <Widget>[
+          children: const <Widget>[
             Text(
               'Welcome to',
               textAlign: TextAlign.center,
-              style: GoogleFonts.caveat(textStyle: dashboardTitle1),
+              style: dashboardTitle1,
             ),
             Text(
               'Soil Health Monitoring App',
               textAlign: TextAlign.center,
-              style: GoogleFonts.staatliches(textStyle: dashboardTitle2),
+              style: dashboardTitle2,
             ),
           ],
         ),),
@@ -43,16 +42,16 @@ class _DashboardScreen extends State<DashboardScreen> {
             children: <Widget> [
               // SOIL PH
               Column(
-                children: <Widget> [
-                  const SizedBox(height: 20),
+                children: const <Widget> [
+                  SizedBox(height: 20),
                   Text(
                     'Soil pH',
-                    style: GoogleFonts.staatliches(textStyle: dataTitle),
+                    style: dataTitle,
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Text(
                     '8.37',
-                    style: GoogleFonts.staatliches(textStyle: dataValue),
+                    style: dataValue,
                   ),
                 ],
               ),
@@ -65,16 +64,16 @@ class _DashboardScreen extends State<DashboardScreen> {
               const SizedBox(height: 20),
               // SOIL MOISTURE
               Column(
-                children: <Widget> [
-                  const SizedBox(height: 30),
+                children: const <Widget> [
+                  SizedBox(height: 20),
                   Text(
                     'Soil Moisture',
-                    style: GoogleFonts.staatliches(textStyle: dataTitle),
+                    style: dataTitle,
                   ),
-                  const SizedBox(height: 30),
+                  SizedBox(height: 20),
                   Text(
                     '50.25',
-                    style: GoogleFonts.staatliches(textStyle: dataValue),
+                    style: dataValue,
                   ),
                 ],
               ),
@@ -87,20 +86,20 @@ class _DashboardScreen extends State<DashboardScreen> {
               const SizedBox(height: 20),
               // SOIL TEMPERATURE
               Column(
-                children: <Widget> [
-                  const SizedBox(height: 30),
+                children: const <Widget> [
+                  SizedBox(height: 20),
                   Text(
                     'Soil Temperature',
-                    style: GoogleFonts.staatliches(textStyle: dataTitle),
+                    style: dataTitle,
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    '50.25°C',
+                    style: dataValue,
                   ),
                   Text(
-                    '(in Celsius)',
-                    style: GoogleFonts.caveat(textStyle: dataCaption, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 30),
-                  Text(
-                    '50.25',
-                    style: GoogleFonts.staatliches(textStyle: dataValue),
+                    '114.14°F',
+                    style: dataValue,
                   ),
                 ],
               ),
@@ -120,9 +119,27 @@ class _DashboardScreen extends State<DashboardScreen> {
           onPressed: () {
             // connect
           },
-          child: Text(
-            'START CONNECTION',
-            style: GoogleFonts.staatliches(textStyle: btnStyle),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const <Widget> [
+              Text(
+                'START',
+                style: startStyle,
+              ),
+              Text(
+                ' / ',
+                style: btnStyle,
+              ),
+              Text(
+                'STOP',
+                style: stopStyle,
+              ),
+              Text(
+                ' CONNECTION',
+                style: btnStyle,
+              ),
+            ],
           ),
         ),
       ),

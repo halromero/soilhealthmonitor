@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:soil_monitoring_system/dashboard.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'styles.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,7 +18,7 @@ class _SplashScreen extends State<SplashScreen> {
   }
 
   _gotoDashboard() async {
-    await Future.delayed(Duration(milliseconds: 3000), () {
+    await Future.delayed(const Duration(milliseconds: 3000), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const DashboardScreen()));
     });
   }
@@ -28,9 +27,13 @@ class _SplashScreen extends State<SplashScreen> {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text(
-            'Soil Health Monitor',
-            style: GoogleFonts.staatliches(textStyle: splashTitle),
+          child: Column(
+            children: const <Widget> [
+              Text(
+                'Soil Health Monitor',
+                style: splashTitle,
+              ),
+            ],
           ),
         ),
       ),
