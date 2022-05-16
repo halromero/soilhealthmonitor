@@ -30,6 +30,16 @@ const splashCaption = TextStyle(
   fontFamily: 'Caveat',
 );
 
+const loginValues = TextStyle(
+  color: Colors.black
+);
+
+const buttonText = TextStyle(
+  fontSize: 18,
+  color: Colors.black,
+  fontFamily: 'Staatliches'
+);
+
 const dataValue = TextStyle(
   fontSize: 50,
   color: Colors.grey,

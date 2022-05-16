@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'login.dart';
 import 'styles.dart';
-
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -10,6 +10,32 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _DashboardScreen extends State<DashboardScreen> {
+
+  Widget buildLogoutBtn() {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 3),
+      alignment: Alignment.center,
+      width: double.infinity,
+      child: RaisedButton(
+        onPressed: () {
+          // prefdata.setBool('login', true);
+          Navigator.of(context).pushAndRemoveUntil(
+              MaterialPageRoute(builder: (context) => const LoginScreen()),
+                  (route) => false);
+        },
+        padding: const EdgeInsets.all(10),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
+        color: const Color(0xFFDBE2EF),
+        child: const Text(
+          'Logout',
+          style: buttonText,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,17 +45,18 @@ class _DashboardScreen extends State<DashboardScreen> {
         toolbarHeight: 150,
         title: Center(
           child: Column(
-          children: const <Widget>[
-            Text(
+          children: <Widget>[
+            const Text(
               'Welcome to',
               textAlign: TextAlign.center,
               style: dashboardTitle1,
             ),
-            Text(
+            const Text(
               'Soil Health Monitoring App',
               textAlign: TextAlign.center,
               style: dashboardTitle2,
             ),
+            buildLogoutBtn(),
           ],
         ),),
         shape: const RoundedRectangleBorder(
@@ -43,7 +70,7 @@ class _DashboardScreen extends State<DashboardScreen> {
               // SOIL PH
               Column(
                 children: const <Widget> [
-                  SizedBox(height: 20),
+                  SizedBox(height: 30),
                   Text(
                     'Soil pH',
                     style: dataTitle,

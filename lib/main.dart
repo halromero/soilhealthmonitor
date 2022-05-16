@@ -1,6 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:soil_monitoring_system/dashboard.dart';
+import 'package:soil_monitoring_system/login.dart';
 import 'package:soil_monitoring_system/styles.dart';
 
 void main() {
@@ -15,25 +16,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Soil Health Monitoring System',
-      home: AnimatedSplashScreen(
-        splashIconSize: 460,
-        splash: Column(
-          children: [
-            Image.asset(
-              'lib/images/soilhealthmonitor.png',
-              height: 300,
-            ),
-            const Text(
-              'Manage your soils.',
-              style: splashCaption
-            ),
-          ],
-        ),
-        nextScreen: const DashboardScreen(),
-        splashTransition: SplashTransition.fadeTransition,
-        backgroundColor: const Color(0xFF222831),
-        duration: 5000,
-      ),
+      home: LoginScreen(),
+      // AnimatedSplashScreen(
+      //   splashIconSize: 460,
+      //   splash: Column(
+      //     children: [
+      //       Image.asset(
+      //         'lib/images/soilhealthmonitor.png',
+      //         height: 300,
+      //       ),
+      //       const Text(
+      //         'Manage your soils.',
+      //         style: splashCaption
+      //       ),
+      //     ],
+      //   ),
+      //   nextScreen: const LoginScreen(),
+      //   splashTransition: SplashTransition.fadeTransition,
+      //   backgroundColor: const Color(0xFF222831),
+      //   duration: 5000,
+      // ),
     );
   }
 }
