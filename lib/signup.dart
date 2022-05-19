@@ -211,15 +211,15 @@ class _SignUpScreen extends State<SignUpScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    // const Image(
-                    //   height: 200,
-                    //   image: AssetImage('lib/images/soil_health_monitor_white.png'),
-                    // ),
-                    const Text(
-                      'Soil Health Monitor',
-                      style: splashTitle,
+                    const Image(
+                      height: 200,
+                      image: AssetImage('lib/images/soil_health_monitor_white.png'),
                     ),
-                    const SizedBox(height: 35),
+                    // const Text(
+                    //   'Soil Health Monitor',
+                    //   style: splashTitle,
+                    // ),
+                    // const SizedBox(height: 25),
                     buildUsername,
                     const SizedBox(height: 25),
                     buildPassword,

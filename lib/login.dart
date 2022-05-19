@@ -179,15 +179,15 @@ class _LoginScreen extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    // const Image(
-                    //   height: 200,
-                    //   image: AssetImage('lib/images/soil_health_monitor_white.png'),
-                    // ),
-                    const Text(
-                      'Soil Health Monitor',
-                      style: splashTitle,
+                    const Image(
+                      height: 200,
+                      image: AssetImage('lib/images/soil_health_monitor_white.png'),
                     ),
-                    const SizedBox(height: 25),
+                    // const Text(
+                    //   'Soil Health Monitor',
+                    //   style: splashTitle,
+                    // ),
+                    // const SizedBox(height: 25),
                     buildUsername,
                     const SizedBox(height: 25),
                     buildPassword,

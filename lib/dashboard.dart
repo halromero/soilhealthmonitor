@@ -52,7 +52,7 @@ class _DashboardScreen extends State<DashboardScreen> {
               style: dashboardTitle1,
             ),
             const Text(
-              'Soil Health Monitoring App',
+              'Soil Health Monitor App',
               textAlign: TextAlign.center,
               style: dashboardTitle2,
             ),
